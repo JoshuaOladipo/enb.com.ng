@@ -6,20 +6,12 @@
   <title>Eunice 'N' BeHappy | Life is Beautiful</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <script src="https://cdn.tailwindcss.com"></script>
-
 </head>
+
 <body class="font-sans">
   <!-- Navbar -->
   <nav class="flex justify-between items-center px-8 py-4 bg-white bg-opacity-80 fixed w-full top-0 z-10">
     <img src="enb_logo.png" alt="Eunice 'N' BeHappy Logo" class="h-20 w-auto" />
-    <!-- <ul class="flex space-x-6 text-[#00B2FF]">
-  <li>
-    <a href="#" class="group inline-block">
-      Link
-      <span class="block h-0.5 w-full bg-[#FF2E92] transform origin-right scale-x-0 transition-transform duration-300 group-hover:scale-x-100"></span>
-    </a>
-  </li>
-</ul> -->
 
    <ul class="flex space-x-6 text-[#00B2FF]">
         <li>
@@ -28,27 +20,29 @@
         <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#FF2E92] origin-right"></span>
         </a>
         </li>
-      <!-- <li><a href="#" class="hover:text-[#FF2E92] transition">Home</a></li> -->
     </ul> 
   </nav>
 
   <!-- Hero Section -->
-  <section class="flex flex-col md:flex-row items-center justify-center text-center md:text-left min-h-screen px-8 pt-24 bg-gradient-to-b">
-    <div class="md:w-1/2">
-      <h1 class="text-5xl md:text-6xl font-bold text-[#00B2FF] leading-tight mb-4">
-        Eunice ‘N’ BeHappy
-      </h1>
-      <p class="text-xl text-gray-600 mb-6">
-        Life is Beautiful — Celebrate joy, positivity, and purpose.
-      </p>
-      <a href="#contact" class="bg-[#FF2E92] hover:bg-[#ff4ba5] text-white px-6 py-3 rounded-full font-semibold transition">
-        Contact Us
-      </a>
-    </div>
-    <!-- <div class="md:w-1/2 mt-10 md:mt-0 flex justify-center">
-      <img src="enb_logo_full.png" alt="Eunice N BeHappy Logo" class="max-w-xs md:max-w-sm" />
-    </div> -->
-  </section>
+<section
+  class="relative flex flex-col md:flex-row items-center justify-center text-center md:text-left min-h-screen px-8 pt-24 
+  bg-[url('background.png')] bg-cover bg-[position:center_20%] bg-no-repeat"
+>
+  <div class="absolute inset-0 bg-gradient-to-b from-transparent to-white pointer-events-none"></div>
+
+  <div class="md:w-1/2 relative z-8 bg-white/70 backdrop-blur-sm p-6 rounded-2xl">
+    <h1 class="text-5xl md:text-6xl font-bold text-[#00B2FF] leading-tight mb-4">
+      Eunice<span style="color: #FF2E92;">‘N’</span>BeHappy
+    </h1>
+    <p class="text-xl text-gray-700 mb-6">
+      Life is Beautiful — Celebrate joy, positivity, and purpose.
+    </p>
+    <a href="#contact"
+      class="bg-[#FF2E92] hover:bg-[#ff4ba5] text-white px-6 py-3 rounded-full font-semibold transition">
+      Contact Us
+    </a>
+  </div>
+</section>
 
   <!-- Contact Section -->
   <section id="contact" class="py-16 px-8 text-center">
@@ -67,5 +61,6 @@
   <footer class="py-6 text-center text-gray-500">
     <p>© 2025 Eunice ‘N’ BeHappy — Life is Beautiful</p>
   </footer>
+
 </body>
 </html>
