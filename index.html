@@ -10,13 +10,19 @@
 
 <body class="font-sans">
   <!-- Navbar -->
-  <nav class="flex justify-between items-center px-8 py-4 bg-white bg-opacity-80 fixed w-full top-0 z-10">
+  <nav class="flex justify-between items-center px-8 py-4 bg-white fixed w-full top-0 z-10">
     <img src="enb_logo.png" alt="Eunice 'N' BeHappy Logo" class="h-20 w-auto" />
 
    <ul class="flex space-x-6 text-[#00B2FF]">
         <li>
         <a href="#" class="group transition duration-300 relative">
-        Link
+          Home
+        <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#FF2E92] origin-right"></span>
+        </a>
+        </li>
+         <li>
+        <a href="#" class="group transition duration-300 relative">
+          About
         <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#FF2E92] origin-right"></span>
         </a>
         </li>
@@ -44,18 +50,113 @@
   </div>
 </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-16 px-8 text-center">
-    <h2 class="text-4xl font-bold text-[#FF2E92] mb-8">Get in Touch</h2>
-    <form class="max-w-lg mx-auto space-y-6">
-      <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg border border-gray-700 focus:outline-none focus:border-[#00B2FF]" />
-      <input type="email" placeholder="Your Email" class="w-full px-4 py-3 rounded-lg border border-gray-700 focus:outline-none focus:border-[#00B2FF]" />
-      <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-700 focus:outline-none focus:border-[#00B2FF]"></textarea>
-      <button type="submit" class="bg-[#00B2FF] hover:bg-[#0090cc] text-white px-6 py-3 rounded-full font-semibold transition">
+<!-- About Section -->
+<section class="px-8 py-16 flex flex-col md:flex-row items-center gap-10">
+  <!-- Image -->
+  <div class="md:w-1/2">
+    <img src="olori_aduke.jpg" alt="Placeholder Image"
+      class="w-full h-auto rounded-2xl shadow-lg object-cover" />
+  </div>
+
+  <!-- Text -->
+  <div class="md:w-1/2">
+    <h2 class="text-4xl font-bold text-[#00B2FF] mb-4">Olori Aduke</h2>
+    <p class="text-gray-700 text-lg leading-relaxed mb-4">
+      Olori Aduke Premium White Rice is all about good food, meaningful moments, and 
+      the simple joy of sharing meals with the people you love. Olori Aduke turns 
+      everyday cooking into something a little more special. The grains are clean, 
+      consistent, and easy to cook—fluffy, light, and perfect for whatever you are making, 
+      from quick weekday meals to big family gatherings. Available in 5kg, 12.5kg, 25kg, 
+      and 50kg bags, it is a reliable choice whether you are stocking up for the house or 
+      running a busy food business. With Olori Aduke, you get quality you can trust and a 
+      product created with genuine care. It’s rice that feels familiar, comforting, and 
+      full of heart—just the way good food should be.
+    </p>
+    <p class="text-gray-700 text-lg leading-relaxed">
+      <a href="#contact"
+      class="bg-[#FF2E92] hover:bg-[#ff4ba5] text-white px-6 py-3 rounded-full font-semibold transition">
+      Order Now
+    </a>
+    </p>
+  </div>
+</section>
+
+ <!-- Contact Section -->
+<section id="contact" class="py-16 px-8">
+  <h2 class="text-4xl font-bold text-[#FF2E92] text-center mb-12">Get in Touch</h2>
+
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+
+    <!-- Left Info Section -->
+    <div class="space-y-8 self-center">
+
+      <!-- Email -->
+      <div class="flex items-start gap-4">
+        <div class="p-3 bg-[#00B2FF] text-white rounded-full">
+          <!-- Mail Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" 
+               stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" 
+              d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25H4.5a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5H4.5A2.25 2.25 0 002.25 6.75m19.5 0v.243a2.25 2.25 
+              0 01-1.07 1.916l-7.5 4.5a2.25 2.25 0 01-2.31 0l-7.5-4.5A2.25 2.25 
+              0 012.25 6.993V6.75" />
+          </svg>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold text-[#00B2FF]">Email</h3>
+          <p class="text-gray-700">eunicenbehappy@gmail.com</p>
+        </div>
+      </div>
+
+      <!-- Cell Number -->
+      <div class="flex items-start gap-4">
+        <div class="p-3 bg-[#FF2E92] text-white rounded-full">
+          <!-- Phone Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" 
+               stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" 
+              d="M2.25 6.75c0 8.284 6.716 15 15 15h.75a2.25 2.25 0 002.25-2.25v-1.372a1.125 
+              1.125 0 00-.852-1.09l-4.548-1.137a1.125 1.125 0 00-1.173.417l-.97 
+              1.293a.75.75 0 01-.917.236 12.035 12.035 0 01-7.143-7.143.75.75 
+              0 01.236-.917l1.293-.97a1.125 1.125 0 00.417-1.173L5.962 
+              3.102A1.125 1.125 0 004.872 2.25H3.75A1.5 1.5 0 002.25 
+              3.75v3z" />
+          </svg>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold text-[#FF2E92]">Mobile Number</h3>
+          <p class="text-gray-700">+234 808 993 8600</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right Contact Form -->
+    <form action="https://formspree.io/f/mzzngwpy" method="POST" class="space-y-6 bg-white p-8 rounded-2xl shadow-lg border border-gray-200">
+      
+      <input type="text" placeholder="Your Name"
+        class="w-full px-4 py-3 rounded-lg border border-gray-700 
+        focus:outline-none focus:border-[#00B2FF]" required/>
+
+      <input type="email" placeholder="Your Email"
+        class="w-full px-4 py-3 rounded-lg border border-gray-700 
+        focus:outline-none focus:border-[#00B2FF]" required/>
+
+      <textarea placeholder="Your Message" rows="4"
+        class="w-full px-4 py-3 rounded-lg border border-gray-700 
+        focus:outline-none focus:border-[#00B2FF]" required></textarea>
+
+      <button type="submit"
+        class="bg-[#00B2FF] hover:bg-[#0090cc] text-white px-6 py-3 rounded-full font-semibold transition">
         Send Message
       </button>
     </form>
-  </section>
+
+  </div>
+</section>
+
 
   <!-- Footer -->
   <footer class="py-6 text-center text-gray-500">
